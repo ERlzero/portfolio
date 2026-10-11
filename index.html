@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F4F0">
+  <title>流离之梦 — Frontend Developer</title>
+  <meta name="description" content="流离之梦 — 前端/全端开发者个人作品展示">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#top">流离之梦</a>
+    <p class="nav-status"><span class="status-dot" aria-hidden="true"></span>available for work</p>
+    <nav class="nav-links" aria-label="页面导航">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="简介">
+      <p class="hero-annotation hero-annotation--tl mono" aria-hidden="true">/* portfolio — v2026.10 */</p>
+      <p class="hero-annotation hero-annotation--br mono" aria-hidden="true">(31.23°N, 121.47°E)</p>
+      <h1 class="hero-title">
+        <span class="hero-line"><span class="hero-line-inner">流离之梦</span></span>
+        <span class="hero-line hero-line--indent"><span class="hero-line-inner">FRONTEND</span></span>
+        <span class="hero-line"><span class="hero-line-inner">DEVELOPER<sup>®</sup><span class="cursor" aria-hidden="true">▌</span></span></span>
+      </h1>
+      <p class="hero-scroll mono" aria-hidden="true">/* scroll to explore */</p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>SELECTED WORK 2024—2026 /* SHIPPED &amp; MAINTAINED */ —&nbsp;</span>
+        <span>SELECTED WORK 2024—2026 /* SHIPPED &amp; MAINTAINED */ —&nbsp;</span>
+      </div>
+    </div>
+
+    <section class="about section" id="about">
+      <p class="section-label mono" aria-hidden="true">/* 01 — about */</p>
+      <h2 class="about-title">CODE,<br>CRAFT &amp;<br>CURIOSITY<span class="blue">.</span></h2>
+      <div class="about-body">
+        <p>我叫 流离之梦，一名前端/全端开发者。我相信界面是工程与手艺的交点：既要有经得起 Code Review 的架构，也要有经得起凝视的细节。</p>
+        <p>过去几年我专注于设计系统、数据可视化与开发者工具，喜欢把复杂的交互问题压缩成简单、快速、可维护的代码。</p>
+        <dl class="spec-sheet mono">
+          <div><dt>role</dt><dd>frontend / fullstack developer</dd></div>
+          <div><dt>focus</dt><dd>design systems · data viz · tooling</dd></div>
+          <div><dt>stack</dt><dd>typescript · react · node</dd></div>
+          <div><dt>base</dt><dd>shanghai, remote-friendly</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <p class="section-label mono" aria-hidden="true">/* 02 — selected work */</p>
+      <h2 class="section-title">SELECTED<br>WORK<span class="blue">.</span></h2>
+      <div id="project-list"><!-- 由 main.js 渲染项目卡片 --></div>
+      <p class="work-fallback mono" id="work-fallback" hidden>项目列表加载失败 — 请直接联系我：hello@deko.dev</p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>OPEN FOR FREELANCE &amp; FULLTIME /* 2026 */ —&nbsp;</span>
+        <span>OPEN FOR FREELANCE &amp; FULLTIME /* 2026 */ —&nbsp;</span>
+      </div>
+    </div>
+
+    <section class="contact section" id="contact">
+      <p class="section-label mono section-label--onblue" aria-hidden="true">/* 03 — contact */</p>
+      <h2 class="contact-title">LET'S<br>TALK</h2>
+      <a class="contact-mail" href="mailto:hello@deko.dev">hello@deko.dev</a>
+      <ul class="contact-links mono">
+        <li><a href="https://github.com/ERlzero" target="_blank" rel="noopener noreferrer">github ↗</a></li>
+        <li><a href="https://example.com/blog" target="_blank" rel="noopener noreferrer">blog ↗</a></li>
+        <li><a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer">résumé ↗</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© 2026 流离之梦 — hand-coded, no frameworks</p>
+    <p class="footer-eof mono" aria-hidden="true">/* EOF */</p>
+  </footer>
+
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" hidden>
+    <div class="overlay-inner" id="overlay-inner"><!-- 由 main.js 填充 --></div>
+  </div>
+
+  <noscript>
+    <p class="noscript-note mono">本站的项目展示需要 JavaScript。请直接联系我：hello@deko.dev</p>
+  </noscript>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
