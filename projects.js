@@ -1,6 +1,17 @@
 /* 项目数据 —— 新增项目：在此数组按同结构添加一条，并把封面图放入 assets/ */
 window.PROJECTS = [
   {
+    id: 'zhimeng-dreamweaver',
+    year: 2026,
+    title: '织梦 Dreamweaver',
+    tagline: '输入一段文字，生成一片只属于它的梦境',
+    cover: 'assets/cover-zhimeng.png',
+    description:
+      '交互式梦境生成器：输入文字，关键词会「长」出对应的意象——星、月、原野、雨、花、流萤，文字的情绪决定梦境的色调。纯 Canvas 2D 手写，种子哈希保证「同一句话永远是同一个梦」，鼠标划过惊起流萤、点击绽放花朵。',
+    stack: ['Canvas 2D', 'JavaScript', 'HTML/CSS', '零依赖'],
+    links: { demo: 'https://ERlzero.github.io/zhimeng/', github: 'https://github.com/ERlzero/zhimeng' }
+  },
+  {
     id: 'pulse-design-system',
     year: 2026,
     title: 'Pulse Design System',
